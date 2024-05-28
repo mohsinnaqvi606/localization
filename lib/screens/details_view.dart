@@ -5,10 +5,19 @@ class DetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: Text('df'),
-      ),
+    return Scaffold(
+      appBar: appBar(),
+    );
+  }
+
+  AppBar appBar() {
+    return AppBar(
+      actions: [
+        OutlinedButton(
+          onPressed: () {},
+          child: const Text('English'),
+        ),
+      ],
     );
   }
 }

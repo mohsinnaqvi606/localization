@@ -8,6 +8,7 @@ import 'package:localization/screens/details_view.dart';
 import 'helper/common_functions.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
